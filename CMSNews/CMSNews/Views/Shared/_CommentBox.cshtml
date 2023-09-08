@@ -1,0 +1,16 @@
+﻿@model CMSNews.Models.ViewModels.CommentViewModel
+<div class="media border p-3 m-2">
+    
+    <div class="media-body">
+        <h4>
+            @Model.Name
+            &nbsp;&nbsp;&nbsp;
+            <small>
+                <i>تاریخ درج نظر : @Html.DisplayFor(model => model.RegisterDate)  </i>
+            </small>
+        </h4>
+        <p>
+           @Model.CommentText
+        </p>
+    </div>
+</div>

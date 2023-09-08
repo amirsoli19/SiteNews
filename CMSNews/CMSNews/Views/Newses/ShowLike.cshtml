@@ -1,0 +1,15 @@
+﻿@model CMSNews.Models.ViewModels.NewsLikeViewModel
+@if (Model.NewsState)
+{
+    <a onclick="changeLikeState(false,@Model.NewsId)" style="cursor:pointer">
+        <i class="fa fa-thumbs-up"></i>
+    </a>
+    @Model.Like
+}
+else
+{
+    <a onclick="changeLikeState(true,@Model.NewsId)" style="cursor:pointer">
+        <i class="fa fa-thumbs-up" style="color:green"></i>
+    </a>
+    @Model.Like
+}
